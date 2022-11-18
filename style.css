@@ -1,0 +1,22 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content {
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Permanent Marker', serif;
+}
+
+.content .text {
+    color: rgb(255, 10, 10);
+}
+
+ 
