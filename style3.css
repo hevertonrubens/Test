@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', serif;
+}
+
+body {
+    background-image: url('img/unnamed.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+    color: black;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.img-box {
+    background-color: rgba(0, 0, 0, 0);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img-box {
+    width: 100%;
+}
+
+.form-box{
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2{
+    color: black;
+    font-size: 30px;
+}
+
+.form-box p{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.form-box p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .input-group{
+    margin-left: 15px;
+}
+
+form .input-group label{
+    color: rgb(202, 17, 17);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-box .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 0, 0, 0.356);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.979);
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus{
+    border-color: rgb(18, 22, 22);
+}
+
+button {
+    margin: 25px 0 0 0;
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0);
+    margin-top: 40px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media (max-width:930px){
+    .img-box {
+        display: none;
+    }
+
+    .box{
+        width: 700px;
+    }
+
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .w50 {
+        width: 100px;
+    }
+}
